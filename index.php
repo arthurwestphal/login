@@ -27,14 +27,38 @@
         </section>
         <!-- Formulario de login -->
         <section class="row">
-            <div class="col-lg-4 offset-lg-4 bg-light rounded" 
-                id="caixalogin">
+            <div class="col-lg-4 offset-lg-4 bg-light rounded" id="caixalogin">
                 <h2 class="text-center mt-2">
                     Entrar no Sistema
                 </h2>
                 <form action="#" method="post" class="p-2">
                     <div>
-                        <input type="text" name="" id="">
+                        <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome de Usuario" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="SenhaUsuario" id="SenhaUsuario" placeholder="Senha" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input" >
+                            <label for="lembrar" class="custom-control-label">
+                                Lembrar de Mim.
+                            </label>
+                            <a href="#" class="float-right">
+                                Esqueci a Senha!
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="::Entrar::" name="btnEntrar" class="btn btn-primary btn-block">
+                    </div>
+                    <div class="form-group">
+                        <p class="text-center"> Novo Usuario? <a href="#" id="btnRegistrar">
+                            Registre-se aqui!
+                        </a>
+                    </p>
+
                     </div>
                 </form>
             </div>
