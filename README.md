@@ -4,6 +4,14 @@ Sistema de login em PHP e Javascript
 ---
 # Passo a passo em todo incio de aula;
 
+# aula02 - 24/09/2019
+Iniciando a aula.
+
+# aula01 - 23/09/2019
+Começou a Primavera :sunflower: 
+Aula inicial, configuração do projeto GitHub.
+E criação do passo a passo.
+
 ## Habilitar o Proxy
 Tecla Windows - Abrir a janela Prompt de Comando
 Copie e cole a linha abaixo - selecione e pressione as teclas Ctrl C
