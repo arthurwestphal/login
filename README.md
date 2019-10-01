@@ -4,6 +4,8 @@ Sistema de login em PHP e Javascript
 ---
 # Passo a passo em todo incio de aula;
 
+# aula04 - 01/10/2019
+
 # aula03 - 30/09/2019
 - Formulario de cadastros de novos usuarios
 - Validação dos campos com jQuery validate
