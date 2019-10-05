@@ -9,15 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
-    <title>Sistema de Login</title>
+    <title>Desafio de Criar Campos</title>
 
-    <style>
-        #alerta,
-        #caixaSenha,
-        #caixaRegistro {
-            display: none;
-        }
-    </style>
 </head>
 
 <body class="bg-dark">
@@ -39,97 +32,37 @@
                     Entrar no Sistema
                 </h2>
 
-                <form action="#" method="post" class="p-2" id="formLogin">
+                <form action="receber.php" method="get" class="p-2" id="formLogin">
                     <div class="form-group">
-                        <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome de Usuário" class="form-control" required minlength="5">
+                        <input type="text" name="nome" id="nome" placeholder="Nome de Usuário" class="form-control" required minlength="5">
                     </div>
 
                     <div class="form-group">
-                        <input type="password" name="senhaUsuario" id="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control" required minlength="6">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" name="senha" id="senha" placeholder="Senha" class="form-control" required minlength="6">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="date" name="DataNascimento" id="DataNascimento" placeholder="Data de Nascimento" class="form-control" required>
                     </div>
 
                     <div class="form-group mt-4">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input">
                             <label for="lembrar" class="custom-control-label">Lembre-se de mim</label>
-                            <a href="#" class="float-right" id="btnEsqueci">Esqueci a senha</a>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <input type="submit" value="Entrar" name="btnEntrar" id="btnEntrar" class="btn btn-primary btn-block">
                     </div>
-
-                    <div class="form-group">
-                        <p clas="text-center">Novo usuário? <a href="#" id="btnRegistrarNovo">Registre-se aqui</a></p>
-                    </div>
                 </form>
             </div>
         </section>
         <!-- Formulário de login ^ -->
-
-        <!-- Formulário de recuperação de senha v -->
-        <section class="row mt-5">
-            <div class="col-lg-4 offset-lg-4 bg-light rounded" name="caixaSenha" id="caixaSenha">
-                <h2 class="text-center mt-2">Gerar Nova Senha</h2>
-
-                <form action="#" method="post" id="formSenha" class="p-2">
-                    <div class="form-group">
-                        <small class="text-muted">Para gerar uma nova senha digite o seu email. Clique no link gerado.</small>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="email" name="emailGerarSenha" id="emailGerarSenha" class="form-control" placeholder="Email de recuperação de senha" required>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="submit" value="Gerar" name="btnGerar" id="btnGerar" class="btn btn-primary btn-block">
-                    </div>
-
-                    <div class="form-group">
-                        <p class="text-center">Já registrado? <a href="#" id="btnJaRegistrado">Entrar por aqui</a></p>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <!-- Formulário de recuperação de senha ^ -->
-
-        <!-- Formulario de cadastro de novos usuarios v -->
-        <section class="row mt-5">
-            <div class="col-lg-4 offset-lg-4 bg-light rounded" id="caixaRegistro">
-                <h2 class="text-center mt-2">Registre-se aqui</h2>
-                <form action="#" method="post" class="p-2" id="formRegistro">
-                    <div class="form-group">
-                        <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control" placeholder="Nome Completo" required minlength="6">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome de Usuário" required minlength="5">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha" required minlength="6">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" name="confirmarSenha" id="confirmarSenha" class="form-control" placeholder="Confirmar senha" required minlength="6">
-                    </div>
-                    <div class="form-group mt-4">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="concordar" id="concordar" class="custom-control-input">
-                            <label for="concordar" class="custom-control-label">Eu concordo com os <a href="#">termos e condições.</a></label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="Registrar" name="btnRegistrar" id="btnRegistrar" class="btn btn-primary btn-block">
-                    </div>
-                    <div class="form-group">
-                        <p class="text-center">Já registrado? <a href="#" id="btnJaRegistrado2">Entrar por aqui</a></p>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <!-- Formulario de cadastro de novos usuarios ^ -->
 
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
