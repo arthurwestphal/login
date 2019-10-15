@@ -44,3 +44,10 @@ git config --global http.proxy http://10.1.21.254:3128
   -Clique no botão azul *Clone*
   
   ## Habilitar o servidor web **Apache** e o servidor **MySQL**
+
+  ## Iportar o banco de dados
+  - Acessar no navegador http://localhost/phpmyadmin/import.php
+  - Clicar em importar
+  -selecionar o arquivo, clicando em browse ou escolha o arquivo
+  -Abra o arquivo 127.0.0.1.sql e clique em executar
+  -o banco deve ter sido importado corretamente
