@@ -35,9 +35,9 @@ DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario` (
   `idUsuario` int(10) UNSIGNED NOT NULL,
   `nomeCompleto` varchar(100) NOT NULL,
-  `nomeDoUsuario` varchar(45) NOT NULL,
+  `nomeUsuario` varchar(45) NOT NULL,
   `emailUsuario` varchar(45) NOT NULL,
-  `senhaDoUsuario` char(40) NOT NULL,
+  `senhaUsuario` char(40) NOT NULL,
   `dataCriado` date NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
@@ -50,7 +50,7 @@ CREATE TABLE `usuario` (
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`idUsuario`),
-  ADD UNIQUE KEY `nomeDoUsuario` (`nomeDoUsuario`),
+  ADD UNIQUE KEY `nomeUsuario` (`nomeUsuario`),
   ADD UNIQUE KEY `emailUsuario` (`emailUsuario`);
 
 --
@@ -67,3 +67,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
