@@ -36,9 +36,7 @@
         <!-- Formulário de login v -->
         <section calss="row">
             <div class="col-lg-4 offset-lg-4 bg-light rounded" name="caixaLogin" id="caixaLogin">
-                <h2 class="text-center mt-2">
-                    Entrar no Sistema
-                </h2>
+                <h2 class="text-center mt-2">Entrar no Sistema</h2>
 
                 <form action="#" method="post" class="p-2" id="formLogin">
                     <div class="form-group">
@@ -66,7 +64,7 @@
                     </div>
 
                     <div class="form-group">
-                        <a name="btnMostrar" id="btnMostrar" class="btn btn-primary btn-block">Mostrar</a>
+                        <input type="button" value="Mostrar" name="btnMostrar" id="btnMostrar" class="btn btn-primary btn-block">
                     </div>
                 </form>
             </div>
@@ -121,11 +119,11 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="submit" value="::Enviar::" name="btnEnviarNovo" id="btnEnviarNovo" class="btn btn-primary btn-block">
+                        <input type="submit" value="Enviar" name="btnEnviarNovo" id="btnEnviarNovo" class="btn btn-primary btn-block">
                     </div>
 
                     <div class="form-group">
-                        <input type="button" value="::Voltar::" name="btnVoltar" id="btnVoltar" class="btn btn-primary btn-block">
+                        <input type="button" value="Voltar" name="btnVoltar" id="btnVoltar" class="btn btn-primary btn-block">
                     </div>
                 </form>
             </div>
@@ -145,14 +143,14 @@
                     <div class="form-group">
                         <input type="email" name="emailGerarSenha" id="emailGerarSenha" class="form-control" placeholder="Email de recuperação de senha" required>
                     </div>
-                    <div class="form-group">
-                        <div class="form-group">
-                            <input type="submit" value="Gerar" name="btnGerar" id="btnGerar" class="btn btn-primary btn-block">
-                        </div>
 
-                        <div class="form-group">
-                            <p class="text-center">Já registrado? <a href="#" id="btnJaRegistrado">Entrar por aqui</a></p>
-                        </div>
+                    <div class="form-group">
+                        <input type="submit" value="Gerar" name="btnGerar" id="btnGerar" class="btn btn-primary btn-block">
+                    </div>
+
+                    <div class="form-group">
+                        <p class="text-center">Já registrado? <a href="#" id="btnJaRegistrado">Entrar por aqui</a></p>
+                    </div>
                 </form>
             </div>
         </section>
@@ -171,6 +169,9 @@
                     </div>
                     <div class="form-group">
                         <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="url" name="urlImagemPerfil" id="urlImagemPerfil" class="form-control" placeholder=" URL de Foto de Perfil" required>
                     </div>
                     <div class="form-group">
                         <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha" required minlength="6">

@@ -14,6 +14,7 @@ if (isset($_SESSION['nomeUsuario'])) { //logado
     $nomeCompleto = $linha['nomeCompleto'];
     $emailUsuario = $linha['emailUsuario'];
     $dataCriado = $linha['dataCriado'];
+    $urlImagemPerfil = $linha['urlImagemPerfil'];
 
     $dataCriado = date('d/m/Y', strtotime($dataCriado));
 } else { //se não estiver logado redirecionar para index
